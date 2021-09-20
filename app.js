@@ -1,41 +1,48 @@
-// Muutujad
-// var, let, const
-// var == let SAMA ASI!!11111!!!!!111!!!11!!1
-// var vana ja kuse, let uus ja based
+// Andmetüübid
 
+// Primitiivid
+// String - sõne, tekst
+const name = "Joosep";
+console.log(typeof name);
 
-// Deklareerimine
-let nimi = "Joosep Elias Tõru";
-// Kasutamine
-//console.log(nimi);
+// Number
+const age = 17;
+console.log(typeof age);
 
-// muutujale uue väärtuse andmine
-//nimi = "Mati Karilaid";
-//console.log(nimi);
+const percent = 50.3;
+console.log(typeof percent);
 
-// lubatud märgid nime loomisel - tähed, numbrid, _, $
-// numbriga muutuja nime alustada ei tohi
+// Boolean
+const hasKids = false;
+console.log(typeof hasKids);
 
-let $="dolar";
-console.log($);
+// Null
+const sugoma = null;
+console.log(typeof sugoma);
 
-const name = "Joosep Elias Tõru";
-console.log(name);
+// Undefined
+let test;
+console.log(typeof test);
 
-// const ei luba väärtust muuta
-//name = "Magnus Aasmäe";
+// Symbol
+const sym = Symbol();
+console.log(typeof sym);
 
-const numbers = [1,2,3,4,5,6,7,8,9];
-numbers.push(0)
-console.log(numbers);
+// Objektid - tüübid, mille sisu saab kätte viite kaudu
+// Objects - reference types
 
-// objektid
+//Array - list, massiiv
+const hobbies = ["heroiin", "gaming"];
+console.log(typeof hobbies);
+
+// Object
 const person = {
-	name: "Mati",
-	age: 48,
-	location: "Harju prison"
-}
-person.name = "Slaava";
-person.age = 26;
+	name: "joe",
+	age: 2
+};
+console.log(typeof person)
 
-console.log(person)
+// näiteks kuupäeva objekt
+const today = new Date();
+console.log(typeof today);
+console.log(today)
