@@ -1,48 +1,46 @@
-// Andmetüübid
+let val;
 
-// Primitiivid
-// String - sõne, tekst
-const name = "Joosep";
-console.log(typeof name);
+// -> string, muudame val stringiks
 
-// Number
-const age = 17;
-console.log(typeof age);
+val = String(555);
+val = String(4-4);
+val = String(5.6);
 
-const percent = 50.3;
-console.log(typeof percent);
+// boolean -> string
 
-// Boolean
-const hasKids = false;
-console.log(typeof hasKids);
+val = String(true);
+val = String(false);
 
-// Null
-const sugoma = null;
-console.log(typeof sugoma);
+// objekt -> string
+val = String(new Date());
 
-// Undefined
-let test;
-console.log(typeof test);
+// massiiv -> string
+val = String([4,3,2,1]);
 
-// Symbol
-const sym = Symbol();
-console.log(typeof sym);
+// alternatiiv .toString()
+val = (5).toString();
+val = (true).toString();
 
-// Objektid - tüübid, mille sisu saab kätte viite kaudu
-// Objects - reference types
+// string -> number
 
-//Array - list, massiiv
-const hobbies = ["heroiin", "gaming"];
-console.log(typeof hobbies);
+val = Number("5");
 
-// Object
-const person = {
-	name: "joe",
-	age: 2
-};
-console.log(typeof person)
+// boolean -> number
+val = Number(true);
+val = Number(false);
 
-// näiteks kuupäeva objekt
-const today = new Date();
-console.log(typeof today);
-console.log(today)
+// null -> number
+val = Number(null);
+
+// tekst -> number EI TÖÖTA D: D: D: D:
+val = Number("tere");
+
+// massiiv -> number EI TÖÖTA D: D: D: D:
+val = Number([1,2,3,]);
+
+// string -> number
+val = parseInt("100.30");
+val = parseFloat("100.30");
+
+console.log(typeof val);
+console.log(val)
