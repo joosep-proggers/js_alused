@@ -1,27 +1,38 @@
-const num1 = 100;
-const num2 = 50;
+const name = "josep";
+const surname = "joseb";
+const age = 1353;
+const message = "ma olen serbias tagaotsitav.";
+const hobid = "zolpadein, kodeiin, heroiin, kokaiin, metamfetamiin";
 
-let result;
+let val;
 
-//matemaatika
+// concatenation
+val = name + " " + surname
 
-result = num1 + num2;
-result = num1 - num2;
-result = num1 * num2;
-result = num1 / num2;
-result = num1 % num2;
+// append
+val = "josep";
+val += " " + surname;
 
-// Math
+val = message + " Minu tegevusalad on " + hobid;
 
-result = Math.PI;
-result = Math.round(2.5);
-result = Math.ceil(2.3);
-result = Math.floor(2.8);
-result = Math.sqrt(64);
-result = Math.abs(-6);
-result = Math.pow(8, 2);
-result = Math.min(90,190,900, 100, 3);
-result = Math.max(1, 65, 56516312, 788723132665466);
-result = Math.round(Math.random() * 1000 + 1);
+// escaping \
 
-console.log(result);
+val = "See on \'jutumärkides\'"
+
+// suuruse muutmine
+
+val = hobid.toUpperCase();
+
+val = surname[0];
+val = surname.indexOf('j');
+val = surname.lastIndexOf('b');
+val = surname.charAt(2);
+val = surname.charAt(surname.length - 1);
+
+val = surname.substring(0,3);
+val = surname.slice(0, 3);
+val = surname.slice(-2);
+
+val = hobid.split(',');
+
+console.log(val)
