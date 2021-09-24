@@ -1,30 +1,34 @@
-const name = "Joosep Elias Tõru";
-const age = 17;
-const job = "donal";
-const city = "Tartu"
+const numbers1 = [1,7,8,987,987,312,65,65,8415,9,32,54,87,5,96,8];
+const numbers2 = new Array(74,659,124,214,212,1,28);
+const dailydiet = ['ketamine', "heroin", "amfetamiin"];
+const mixed = [215, true, "amogus", undefined, null, {a:1,b:2}, new Date()];
 
-let html;
+let val;
 
-// es5
+val = numbers1.length;
+val = Array.isArray(numbers1);
 
-html = 	'<ul>' + 
-			'<li>' + name + '</li>' +
-			'<li>' + age + '</li>' +
-			'<li>' + job + '</li>' +
-			'<li>' + city + '</li>' +
-		'</ul>'
+val = numbers1[3];	
+numbers1[2] = 60;
 
+val = numbers1.indexOf(987);
 
-// es6 - template string
+val = numbers1.push(12);
+val = numbers1.unshift(2603);
+val = numbers1.pop();
+val = numbers1.shift();
 
-html = 
-	`<ul>
-		<li>Name: ${name}</li>
-		<li>Age: ${age}</li>
-		<li>Job: ${job}</li>
-		<li>City: ${city}</li>
-	<ul>`
+//console.log(numbers1);
 
-console.log(html);
+//numbers1.splice(1,3);
+//numbers1.reverse();
 
-document.body.innerHTML = html
+val = numbers1.concat(numbers2);
+
+console.log(numbers1);
+
+val = numbers1.sort(function(x, y){
+	return y - x
+});
+
+console.log(val);
