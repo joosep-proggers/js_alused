@@ -1,38 +1,30 @@
-const name = "josep";
-const surname = "joseb";
-const age = 1353;
-const message = "ma olen serbias tagaotsitav.";
-const hobid = "zolpadein, kodeiin, heroiin, kokaiin, metamfetamiin";
+const name = "Joosep Elias Tõru";
+const age = 17;
+const job = "donal";
+const city = "Tartu"
 
-let val;
+let html;
 
-// concatenation
-val = name + " " + surname
+// es5
 
-// append
-val = "josep";
-val += " " + surname;
+html = 	'<ul>' + 
+			'<li>' + name + '</li>' +
+			'<li>' + age + '</li>' +
+			'<li>' + job + '</li>' +
+			'<li>' + city + '</li>' +
+		'</ul>'
 
-val = message + " Minu tegevusalad on " + hobid;
 
-// escaping \
+// es6 - template string
 
-val = "See on \'jutumärkides\'"
+html = 
+	`<ul>
+		<li>Name: ${name}</li>
+		<li>Age: ${age}</li>
+		<li>Job: ${job}</li>
+		<li>City: ${city}</li>
+	<ul>`
 
-// suuruse muutmine
+console.log(html);
 
-val = hobid.toUpperCase();
-
-val = surname[0];
-val = surname.indexOf('j');
-val = surname.lastIndexOf('b');
-val = surname.charAt(2);
-val = surname.charAt(surname.length - 1);
-
-val = surname.substring(0,3);
-val = surname.slice(0, 3);
-val = surname.slice(-2);
-
-val = hobid.split(',');
-
-console.log(val)
+document.body.innerHTML = html
