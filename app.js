@@ -1,34 +1,38 @@
-const numbers1 = [1,7,8,987,987,312,65,65,8415,9,32,54,87,5,96,8];
-const numbers2 = new Array(74,659,124,214,212,1,28);
-const dailydiet = ['ketamine', "heroin", "amfetamiin"];
-const mixed = [215, true, "amogus", undefined, null, {a:1,b:2}, new Date()];
+const person = {
+	firstName: 'Juhan',
+	lastName: 'Siberist',
+	age: 39,
+	email: 'juhan@susmail.ee',
+	hobbies: ['muusika', 'pangarööv'],
+	aadress: {
+		city: "Rapla",
+		county: "Raplamaa"
+	},
+	getBirthYear: function() {
+		return 2021 - this.age;
+	}
+};
 
 let val;
 
-val = numbers1.length;
-val = Array.isArray(numbers1);
+val = person;
 
-val = numbers1[3];	
-numbers1[2] = 60;
+val = person.firstName;
+// val = person.['lastName'];
+val = person.hobbies[1];
+val = person.aadress['city'];
+val = person.getBirthYear();
 
-val = numbers1.indexOf(987);
+const people = [
+	{name: 'Juhan', age: 39},
+	{name: 'Mati', age: 46},
+	{name: 'Jarmo', age:13}
+];
 
-val = numbers1.push(12);
-val = numbers1.unshift(2603);
-val = numbers1.pop();
-val = numbers1.shift();
+val = people;
 
-//console.log(numbers1);
+for(let i = 0; i < people.length; i++){
+	console.log(people[i].name);
+}
 
-//numbers1.splice(1,3);
-//numbers1.reverse();
-
-val = numbers1.concat(numbers2);
-
-console.log(numbers1);
-
-val = numbers1.sort(function(x, y){
-	return y - x
-});
-
-console.log(val);
+console.log(val)
