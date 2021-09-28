@@ -1,18 +1,32 @@
 let val;
 
-val = document;
-val = document.all;
-val = document.all.length;
+// document.getElementById();
 
-val = document.head;
-val = document.body;
+val = document.getElementById("task-title");
 
-val = document.forms[0].method;
-val = document.forms[0].action;
-val = document.forms[0].id;
+const taskTitle = document.getElementById("task-title");
 
-val = document.links[0];
+// Stiili muutmine
 
-val = document.scripts;
+taskTitle.style.background = '#333';
+taskTitle.style.color = "#fff";
+taskTitle.style.padding = "5px";
+
+// Sisu muutmine
+
+taskTitle.textContent = 'balls';
+taskTitle.innerHTML = '<span style="color:red";">balls</span>'
+
+// document.querySelector();
+
+val = document.querySelector('#task-title');
+val = document.querySelector('.card-title');
+val = document.querySelector('h2');
+
+document.querySelector('li').style.color="blue";
+
+document.querySelector('ul li').style.color="yellow";
+
+document.querySelector('li:nth-child(even)').style.background="#ccc";
 
 console.log(val);
