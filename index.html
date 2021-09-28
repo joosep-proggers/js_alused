@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html>
-	<head>*
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>JS ALUSED</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	</head>
 
 	<body>
-		<h2> arvutimängimine </h2>
-		<h2>JS ALUSED - Tsüklid</h2>
-		<br><br><br><br><h1>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2> arvutimängimine </h2>
+                    <h2>JS ALUSED - DOM</h2>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">To do list</span>
+                            <div class="row">
+                                <form id="task-form" method = "">
+                                    <div class="input-field col s12">
+                                        <input type="text">
+                                        <label for="">New task</label>
+                                    </div>
+                                    <input type="submit" value="Add task" class="btn">
+                                </form>
+                            </div>
+                        </div>
+                    <div class="card-action">
+                    <h4>To do:</h4>
+                    <div class="collections">
+                        <ul class="collection">
+                          <li class="collection-item">Study JS
+                                <a href="#" class="secondary-content">X</a>
+                            </li>
+                            <li class="collection-item">Study HTML
+                                <a href="#" class="secondary-content">X</a>
+                            </li>
+                            <li class="collection-item">Do yoe'ur' mome
+                                <a href="#" class="secondary-content">X</a>
+                            </li>
+                            <li class="collection-item">Alvin
+                                <a href="#" class="secondary-content">X</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<br>
+		<form id="frm1">
+  		Lisa nimekirja: <input type="text" id="VäljaVäärtus">
+  		<input type="button" onclick="sus()" value="Lisa">
+		</form>
+		<h2>TO DO:</h2>
+		<ul>
+			<li>Lastele süüa anda</li>
+            <li>Mitte unustada 1. punkti</li>
+		</ul>
+		<br><br><h1>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠟⠉⠉⠉⠉⠉⠉⠉⠙⠻⢶⣄⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡟⠀⣠⣶⠛⠛⠛⠛⠛⠛⠳⣦⡀⠀⠘⣿⡄⠀⠀
@@ -34,7 +83,7 @@
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><img src="troll-face-creepy-smile.gif" alt="owo" widht="1000" height="1000">
 		<br><br><br><br><br><br><br><br><br><br>
 		
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<script src="app.js"></script>
 	</body>
 </html>

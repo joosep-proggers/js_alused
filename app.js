@@ -1,74 +1,18 @@
-// for tsükkel
+let val;
 
-console.log("For tsükkel")
-for(let i = 0; i < 10; i++){
-	if(i==5){
-		// break;
-		continue;
-	}
-	console.log(i)
-}
+val = document;
+val = document.all;
+val = document.all.length;
 
-// while tsükkel :D
+val = document.head;
+val = document.body;
 
-console.log("While tsükkel");
+val = document.forms[0].method;
+val = document.forms[0].action;
+val = document.forms[0].id;
 
-let i = 0;
+val = document.links[0];
 
-while(i < 10){
-	console.log(i);
-	i++;
-}
+val = document.scripts;
 
-// do while tsükkel
-
-console.log("Do while tsükkel");
-
-let j = 0;
-do {
-	console.log(j)
-	j++;
-} while(j < 10);
-
-// tsüklid ja massiivid
-
-console.log("Massiivid ja tsüklid")
-const cars = ["Ford","Toyota","Honda"];
-
-// for tsükliga
-console.log("For tsükliga");
-console.log();
-
-for(let i=0; i < cars.length; i++){
-	console.log(cars[i]);
-};
-
-// forEach - callback function
-console.log("forEach tsükkliga");
-console.log();
-
-cars.forEach(function(element, index){
-	console.log(`cars[${index}] = ${element}`);
-});
-
-// forEach -  (arrow) => function
-console.log("forEach tsükkliga");
-console.log();
-
-cars.forEach((element, index) => {
-	console.log(`cars[${index}] = ${element}`);
-});
-
-console.log();
-
-// Tsüklid ja objektid
-const crewmate = {
-	colour: 'Red',
-	impostor: false,
-	susMeter: 57
-};
-
-// for in tsükkel
-for(let key in crewmate){
-	console.log(`${key} = ${crewmate[key]}`);
-}
+console.log(val);
