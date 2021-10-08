@@ -20,7 +20,7 @@ form.addEventListener("submit", addTask);
 
 function addTask(e){
 //body...
-
+// lol, see pole mairo kod stg
 //
 li.appendChild(document.createTextNode(taskInput.value));
 const link=document.createElement("a");
