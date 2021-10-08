@@ -1,32 +1,35 @@
-let val;
+const form=document.querySelector("form");
+const taskInput=document.querySelector("#task");
+const heading=document.querySelector("h4");
+const li=document.createElement("li");
+const list=document.querySelector("ul");
 
-// document.getElementById();
+li.className="collection-item";
 
-val = document.getElementById("task-title");
+taskInput.value = "";
 
-const taskTitle = document.getElementById("task-title");
+form.addEventListener("submit", addTask);
+//taskInput.addEventListener("keydown", runEvent);
+//taskInput.addEventListener("keyup", runEvent);
+//taskInput.addEventListener("keypress", runEvent);
+//taskInput.addEventListener("focus", runEvent);
+//taskInput.addEventListener("blur", runEvent);
+//taskInput.addEventListener("cut", runEvent);
+//taskInput.addEventListener("paste", runEvent);
+//taskInput.addEventListener("input", runEvent);
 
-// Stiili muutmine
+function addTask(e){
+//body...
 
-taskTitle.style.background = '#333';
-taskTitle.style.color = "#fff";
-taskTitle.style.padding = "5px";
+//
+li.appendChild(document.createTextNode(taskInput.value));
+const link=document.createElement("a");
+link.className="secondary-content";
+link.appendChild(document.createTextNode("X"));
+link.setAttribute("href", "#");
+li.appendChild(link);
+list.appendChild(li);
+//console.log(li);
+e.preventDefault();
+}
 
-// Sisu muutmine
-
-taskTitle.textContent = 'balls';
-taskTitle.innerHTML = '<span style="color:red";">balls</span>'
-
-// document.querySelector();
-
-val = document.querySelector('#task-title');
-val = document.querySelector('.card-title');
-val = document.querySelector('h2');
-
-document.querySelector('li').style.color="blue";
-
-document.querySelector('ul li').style.color="yellow";
-
-document.querySelector('li:nth-child(even)').style.background="#ccc";
-
-console.log(val);
